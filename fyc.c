@@ -15,7 +15,7 @@ int main(int argc, char *argv[]){
   int fin, n;
   int rs = 17;
   char buf[BLK];
-  char msg[] = "Julian Is BRO!!!";//14
+  char msg[] ="THIS IS THE NEW!!";
 
   if((fin = open(argv[1], O_RDWR))<0){
     sys_err("Fin open error");
