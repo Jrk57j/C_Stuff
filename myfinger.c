@@ -17,7 +17,7 @@ int main(int argvc, char *argv[]){
 
   switch(fork()){
     case -1:
-    sys_error("shits fucked");
+    sys_error("failed to create proc\n");
     break;
     case 0:
     dup2(fd[0], STDIN_FILENO);
